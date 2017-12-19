@@ -23,7 +23,7 @@ public class SpringRestAtControllerTests {
 	public void shouldReturnGreeting() throws Exception {
 		this.mockMvc.perform(get("/hello/Rod"))
 				.andExpect(status().isOk())
-				.andExpect(content().string(equalTo("Hola Rod!")));
+				.andExpect(content().string(equalTo("Hello Rod!")));
 	}
 
 	@Test
